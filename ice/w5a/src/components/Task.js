@@ -14,6 +14,9 @@ class Task {
         this.element.appendChild(span);
         span.innerHTML = this.props.content;
         this.element.className = "task";
+
+        
+
     }
 onClick(e) {
     console.log(this);
