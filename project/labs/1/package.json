@@ -1,0 +1,19 @@
+{
+  "name": "lab1",
+  "version": "1.0.0",
+  "description": "For ES6 Classes and Node (Lab 1)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkbarron/dig4639-mobile-dev.git"
+  },
+  "author": "Michelle Barron",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mkbarron/dig4639-mobile-dev/"
+  },
+  "homepage": "https://github.com/mkbarron/dig4639-mobile-dev#readme"
+}
