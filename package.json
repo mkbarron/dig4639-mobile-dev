@@ -1,22 +1,29 @@
 {
-  "name": "components",
-  "version": "0.1.0",
-  "description": "Initial version of DIG 4639 for UCF",
+  "name": "dig4639-mobile-dev",
+  "version": "1.0.0",
+  "description": "This repository contains work completed during Spring 2020 in Dr. Murray's DIG4639: Mobile Development class.",
   "main": "index.js",
+  "dependencies": {
+    "css-loader": "^3.4.2",
+    "file-loader": "^5.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^1.1.3",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lucidbard/dig4639-mobile-dev.git"
+    "url": "git+https://github.com/mkbarron/dig4639-mobile-dev.git"
   },
-  "author": "Dr. John T Murray",
-  "license": "MIT",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lucidbard/dig4639-mobile-dev/issues"
+    "url": "https://github.com/mkbarron/dig4639-mobile-dev/issues"
   },
-  "homepage": "https://github.com/lucidbard/dig4639-mobile-dev#readme",
-  "dependencies": {
-    "jest": "^24.9.0"
-  }
+  "homepage": "https://github.com/mkbarron/dig4639-mobile-dev#readme"
 }
