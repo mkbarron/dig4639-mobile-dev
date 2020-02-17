@@ -12,7 +12,16 @@ else
 }
 
 export function AddList(list) {
-  return 0;
+  var result = 0;
+  for(var mem of list) {
+
+  }
+  for(var i = 0; i < list.length; i++) {
+    if(list[i] == undefined)
+      return underfined;
+    result = result + list[i];
+  }
+ }  return 0;
 }
 
 let op1 = "ten";

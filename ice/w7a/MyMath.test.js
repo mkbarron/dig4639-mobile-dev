@@ -6,7 +6,11 @@ describe('Testing AddList', () => {
     let list = [1,2,3,4];
     let result = AddList(list);
     expect(result).toBe(10);
+    list = [4, 100, 1000];
+    result = AddList(list);
+    expect(result).toBe(1104);
   })
+  it('Member of list is undefined'), () =>
 })
 
 describe('Testing Sum', () => {
