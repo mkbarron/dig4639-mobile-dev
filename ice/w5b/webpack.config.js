@@ -13,16 +13,6 @@ module.exports = {
             template: 'src/index.html'
     }),
     ],
-<<<<<<< HEAD
-module: {
-    rules: [
-        {
-            test: /\.css$/i,
-            use: ['style-loader', 'css-loader']
-        }
-    ]
-}
-=======
     module: {
         rules: [
            {
@@ -31,6 +21,5 @@ module: {
            }
         ]
     }    
->>>>>>> b09e84dd73f19a1601e6a93cb4e7bf1317d827be
 };
 

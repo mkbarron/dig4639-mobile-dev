@@ -2,9 +2,15 @@
 Working in a team of 2-3, start with the code in ice/w5a in the class repository.
 
 ## Team Members
+<<<<<<< HEAD
 - Michelle Barron: mkbarron
 - Kiara Chacon: kichacon
 
+=======
+ - 
+ - 
+ - 
+>>>>>>> b09e84dd73f19a1601e6a93cb4e7bf1317d827be
 
 ## TODO App Requirements
 
