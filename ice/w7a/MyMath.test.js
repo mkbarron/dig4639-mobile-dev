@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Sum, AddList } from './MyMath.js'
 
 describe('Testing AddList', () => {
@@ -18,6 +19,9 @@ describe('Testing Sum', () => {
     var result =Sum("Test", 5);
     expect(result).toBeUndefined();
 });
+=======
+import { Sum } from './MyMath.js'
+>>>>>>> fe277fcee38e1b953a813f52fa2d0a9fceacf0f6
 
 test('adds 1 + 2 to equal 3', () => {
   expect(Sum(1, 2)).toBe(3)

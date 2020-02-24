@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //Produces the sum of the two parameters
 /**
  * The two parameters must be numbers, otherwise return undefined
@@ -32,3 +33,12 @@ if(result==op1+op2) {
 } else {
   console.log("Expected" + op1+op2 )
 }
+=======
+function Sum (a, b) {
+  return a + b
+}
+
+console.log(Sum(2,3));
+
+export { Sum };
+>>>>>>> fe277fcee38e1b953a813f52fa2d0a9fceacf0f6
