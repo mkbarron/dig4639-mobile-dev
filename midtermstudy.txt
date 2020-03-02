@@ -1,0 +1,50 @@
+"cd .."  refers to the parent directory
+
+true - boolean variable
+
+let a = {a:5, b:10} 
+    let defines block scope variable
+    {___} object literal
+    "1000" string literal; includes just the string itself as a data element
+    'This is a {$template}' template literal   
+
+for loop include an index
+    for(let i = 0; i <arr.length; i++)
+for of loop
+    for(let value of arr) 
+
+logical operators
+    true && false = false; it only results true if both are true
+    true && true = true
+    (5 > 1 && 1 <10) = true
+    true || false = true
+
+[echo] $PATH is a sring that represents all the directories that the command line searches
+
+Installing a node package or webpack
+    stores/saves info in package.json
+Webpack - transform/transpile code from advanced into form the browser can understand
+    only transpiles; gives feedback when running npm start
+
+Installing a node module
+    stored in node_modules directory
+
+All react components must start with a capital letter
+    otherwise confuses with html element
+
+Why use arrow functions
+    syntax = "_____ =>() 'returned value' "
+    needs a list of parameters
+
+
+1 red
+In javascript the keyword class is used to define an object : true
+arrow function () => {}
+2 false
+3 yellow
+4 true
+5 map()
+components taking care of themselves : true
+6 component
+7 true
+8 display html
