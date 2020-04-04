@@ -1,7 +1,7 @@
 import React from 'react'
 import WeatherCard from '../WeatherCard/index.js'
 
-class CardList extends React.Component {
+class Cards extends React.Component {
   
   constructor (props) {
     super(props)
@@ -38,4 +38,4 @@ class CardList extends React.Component {
   }
 }
 
-export default CardList
+export default Cards
