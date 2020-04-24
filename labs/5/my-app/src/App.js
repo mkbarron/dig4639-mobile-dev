@@ -7,7 +7,7 @@ class App extends React.Component {
       render() {
         return (
           <View>
-            <Cards/>
+            <WeatherCard/>
           </View> 
         )
     }
