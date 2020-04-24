@@ -1,4 +1,5 @@
-let Card; // TODO: Replace this with the correct import statement
+// Import correct component
+import Card from "./components/Cards/index.js"
 
 function runOnLoad()
 {
@@ -6,8 +7,8 @@ function runOnLoad()
     let element = document.createElement("div");
     element.id = "container";
     document.body.appendChild(element);
-    var newCard = new Card({content:"Sample value provided"});
-    element.appendChild(newCard.render());
+    var newTask = new Card({content:"Sample value provided"});
+    element.appendChild(newTask.render());
 }
 
 window.addEventListener("DOMContentLoaded", runOnLoad);
