@@ -1,41 +1,26 @@
-import React from 'react'
-import WeatherCard from '../WeatherCard/index.js'
+import "./index.css";
+import React from 'react';
 
-class Cards extends React.Component {
-  
-  constructor (props) {
-    super(props)
-
-    this.state = {
-      periods: []
+class Card extends React.Component {
+    constructor (props) {
+        super(props);
+        this.state = {
+          name: '',
+          temperature: 0,
+          temperatureUnit: '',
+          detailedForecast: ''
+        };
+      }
+    
+      render () {
+        return (
+          <div className="card">
+            <h1 className="title">{this.props.name}</h1>
+            <h1 className="temp">{this.props.temperature} {this.props.temperatureUnit}</h1>
+            <p>{this.props.detailedForecast}</p>
+          </div>
+        )
+      }
     }
-  }
 
-  componentDidMount() {
-
-    fetch('https://api.weather.gov/gridpoints/MLB/25,69/forecast')
-      .then(res => res.json())
-      .then((result) => {
-        this.setState({
-          periods: result.properties.periods
-        })
-      })
-
-  }
-  
-  render () {
-    return (
-      <>
-        {this.state.periods
-          .map((v) => <WeatherCard key={v.number}
-            name={v.name}
-            temperature={v.temperature}
-            temperatureUnit={v.temperatureUnit}
-            detailedForecast={v.detailedForecast}
-          />)}
-      </>
-    )
-  }
-}
-
-export default Cards
+export default Card;

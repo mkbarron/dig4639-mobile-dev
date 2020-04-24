@@ -1,70 +1,41 @@
-import React from "react";
-import {View, Text, StyleSheet} from "react-native";
-
-const styles = StyleSheet.create({
-  card: {
-    justifyContent: "center",
-    backgroundColor: "#c7e89d",
-    alignItems:"center",
-    textAlign: "center",
-    width: "50%",
-    padding:"2em",
-    borderWidth: 4,
-    borderColor: "black",
-    borderRadius: 3,
-    marginLeft: "auto",
-    marginRight: "auto"
-  },
-  heading: {
-    fontSize: 20,
-    fontWeight: "bold"
-  }
-
-})
+import React from 'react';
+import Card from '../Card/';
 
 class WeatherCard extends React.Component {
-
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      periods: []
-    };
-
-  }
-
-  componentDidMount() {
-
-    fetch("https://api.weather.gov/gridpoints/MLB/25,69/forecast")
-    .then(res => res.json())
-    .then((result) => {
-      let periods = result.properties.periods;
-     
-      this.setState({
-        periods: periods
-      });
-      
-    })
-    .catch((error) => {console.log(error)} );
-
-  }
-
-  render() {
-    return(
-      <View>
-        {
-            this.state.periods.map((value, index) => {
-                return <View style={styles.card} key={index}>
-                    <Text style={styles.heading}>{value.name}</Text>
-                    <Text style={styles.heading}>{value.temperature} {value.temperatureUnit}</Text>
-                    <Text>{value.detailedForecast}</Text>
-                    </View>;
+    constructor (props) {
+        super(props)
+        this.state = {periods: []}
+      }
+    
+      componentDidMount() {
+    
+        fetch('https://api.weather.gov/gridpoints/MLB/25,69/forecast')
+          .then(res => res.json())
+          .then((result) => {
+            this.setState({
+              periods: result.properties.periods
             })
-        
-        }
-      </View>
-    );
-
-}
+          })
+    
+      }
+      
+      render () {
+        return (
+          <div>
+            {
+            this.state.periods.map((v) => {
+              return <Card
+                key = {v.number}
+                name = {v.name}
+                temperature = {v.temperature}
+                temperatureUnit = {v.temperatureUnit}
+                detailedForecast = {v.detailedForecast}
+              />
+              })
+            } 
+          </div>
+        );
+      }
+    }
 
 export default WeatherCard;
