@@ -1,0 +1,112 @@
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto';
+    background-color: DarkSlateGray;
+    color: DDarkSlateGray; } 
+
+
+fieldset{
+    background: DarkSeaGreen;
+    border-color: DarkSlateGray;
+    display: block;
+}
+
+fieldsettwo{
+    background: DarkSlateGray;
+    display: block;
+    width: 100%;
+}
+
+
+h1 {
+    text-align: center;
+    font-family: 'Lucida Bright';
+    font-size: 30px;
+    color: DarkSeaGreen;
+    margin: 10px auto 40px auto;
+    width: 100%;
+    padding: 20px;
+}
+h2{
+    font-family: 'Lucida Bright',;
+    text-align: Center;
+    font-size: 20px;
+    width: 30%;
+    margin: 0px auto 10px auto; 
+    padding: 5px;
+}
+h3 {
+    font-family: 'Lucida Bright';
+    text-align: center;
+    font-size: 16px;
+    padding-top: 5px;
+}
+h4 {
+  font-family: 'Courier';
+  text-align: center;
+  margin: 5px;
+}
+
+h5{
+    font-family: 'Lucida Bright',;
+    text-align: Center;
+    font-size: 20px;
+    color: DarkSeaGreen;
+    width: 100%;
+    margin: 0px auto 10px auto; 
+    padding: 5px;
+}
+
+p {
+    font-family: 'Courier New';
+    text-align: center;
+    margin: 3px;
+}
+
+form{
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+input{
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    height: 20px;
+}
+
+.container {
+    display: grid;
+    margin-left: 5%;
+    margin-right: 5%;
+    grid-column-gap: 18px;
+}
+
+.card{
+    background-color: DarkSeaGreen;
+    border-color: DarkSlateGray;
+    margin: 10px;
+    width: 40%;
+    text-align: center;
+}
+button{
+    background-color: DarkSeaGreen;
+    color: DarkSlateGray;
+    border-color: DarkSeaGreen;
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-weight: bold;
+    width: 50%;
+    margin: auto;
+}
+
+.buttondiv{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Roboto';
+}
+
